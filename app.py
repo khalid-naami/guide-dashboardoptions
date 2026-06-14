@@ -75,7 +75,7 @@ if "?? Home" in page:
         <div class="hero-title">Dashboard Options</div>
         <p class="hero-sub">Real-time options Greeks, flow analytics, and market intelligence â€” all in one platform. Built for serious traders.</p>
         <a href="https://dashboardoptions.com" target="_blank" class="btn-primary">?? Launch Platform</a>
-        <a href="https://github.com/khalid-naami/Dashboard-options" target="_blank" class="btn-outline">? Star on GitHub</a>
+        <a href="https://github.com/khalid-naami/guide-dashboardoptions" target="_blank" class="btn-outline">? Star on GitHub</a>
     </div>
     """, unsafe_allow_html=True)
 
@@ -184,7 +184,7 @@ elif "?? Get Started" in page:
             <div style="font-size:1.5rem; margin-bottom:12px;">??</div>
             <div style="font-weight:800; font-size:1.1rem; color:#fff; margin-bottom:8px;">Run Locally</div>
             <div style="color:#666; font-size:0.88rem; margin-bottom:20px;">Clone the repo and run on your machine.</div>
-            <a href="https://github.com/khalid-naami/Dashboard-options" target="_blank" class="btn-outline" style="display:block; text-align:center;">? Clone on GitHub</a>
+            <a href="https://github.com/khalid-naami/guide-dashboardoptions" target="_blank" class="btn-outline" style="display:block; text-align:center;">? Clone on GitHub</a>
         </div>
         """, unsafe_allow_html=True)
 
@@ -210,7 +210,7 @@ elif "?? Get Started" in page:
 
     st.markdown("""
     <div class="code-block">
-git clone https://github.com/khalid-naami/Dashboard-options<br>
+git clone https://github.com/khalid-naami/guide-dashboardoptions<br>
 cd "Dashboard options"<br>
 python -m venv venv<br>
 .\\venv\\Scripts\\activate<br>
@@ -227,7 +227,7 @@ elif "?? Links" in page:
         st.markdown("<div style='font-weight:700;color:#fff;margin-bottom:16px;'>?? Official</div>", unsafe_allow_html=True)
         for icon, name, handle, url in [
             ("??","Website","dashboardoptions.com","https://dashboardoptions.com"),
-            ("??","GitHub","khalid-naami/Dashboard-options","https://github.com/khalid-naami/Dashboard-options"),
+            ("??","GitHub","khalid-naami/guide-dashboardoptions","https://github.com/khalid-naami/guide-dashboardoptions"),
             ("??","Twitter / X","@DashboardOption","https://x.com/DashboardOption"),
             ("??","LinkedIn","khalid-naami","https://linkedin.com/in/khalid-naami"),
         ]:
@@ -258,6 +258,7 @@ st.markdown("""
     &nbsp;·&nbsp;
     <a href="https://dashboardoptions.com" style="color:#00ff88;text-decoration:none;">dashboardoptions.com</a>
     &nbsp;·&nbsp;
-    <a href="https://github.com/khalid-naami/Dashboard-options" style="color:#00ff88;text-decoration:none;">GitHub</a>
+    <a href="https://github.com/khalid-naami/guide-dashboardoptions" style="color:#00ff88;text-decoration:none;">GitHub</a>
 </div>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True)
+
