@@ -224,24 +224,25 @@ elif "?? Links" in page:
 
     c1, c2 = st.columns(2)
     with c1:
-        st.markdown("<div style='font-weight:700;color:#fff;margin-bottom:16px;'>?? Official</div>", unsafe_allow_html=True)
+        st.markdown("<div style='font-weight:700;color:#00ff88;margin-bottom:16px;font-size:1rem;letter-spacing:1px;'>🌐 Official</div>", unsafe_allow_html=True)
         for icon, name, handle, url in [
-            ("??","Website","dashboardoptions.com","https://dashboardoptions.com"),
-            ("??","GitHub","khalid-naami/guide-dashboardoptions","https://github.com/khalid-naami/guide-dashboardoptions"),
-            ("??","Twitter / X","@DashboardOption","https://x.com/DashboardOption"),
-            ("??","LinkedIn","khalid-naami","https://linkedin.com/in/khalid-naami"),
+            ("🌐", "Website", "dashboardoptions.com", "https://dashboardoptions.com/"),
+            ("👤", "Khalid Naami", "khalidnaami.com", "https://khalidnaami.com/"),
+            ("💻", "GitHub", "khalid-naami/guide-dashboardoptions", "https://github.com/khalid-naami/guide-dashboardoptions"),
+            ("🐦", "Twitter / X", "@DashboardOption", "https://x.com/DashboardOption"),
+            ("💼", "LinkedIn", "Dashboard Options", "https://www.linkedin.com/company/dashboard-options/"),
+            ("📸", "Instagram", "@dashboardoptions", "https://www.instagram.com/dashboardoptions/"),
         ]:
-            st.markdown(f'<a href="{url}" target="_blank" class="social-link"><div class="social-icon">{icon}</div><div><div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div><div style="color:#555;font-size:0.82rem;">{handle}</div></div><div style="margin-left:auto;color:#333;">?</div></a>', unsafe_allow_html=True)
+            st.markdown(f'<a href="{url}" target="_blank" class="social-link"><div class="social-icon">{icon}</div><div><div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div><div style="color:#888;font-size:0.82rem;">{handle}</div></div><div style="margin-left:auto;color:#00ff88;">→</div></a>', unsafe_allow_html=True)
 
     with c2:
-        st.markdown("<div style='font-weight:700;color:#fff;margin-bottom:16px;'>?? Community</div>", unsafe_allow_html=True)
+        st.markdown("<div style='font-weight:700;color:#00ff88;margin-bottom:16px;font-size:1rem;letter-spacing:1px;'>💬 Community</div>", unsafe_allow_html=True)
         for icon, name, handle, url in [
-            ("??","Discord Server","Join our trading community","https://discord.gg/dashboardoptions"),
-            ("??","Telegram","Daily market updates","https://t.me/dashboardoptions"),
-            ("??","YouTube","Tutorials & analysis","https://youtube.com/@dashboardoptions"),
-            ("??","TradingView","Follow our indicators","https://tradingview.com"),
+            ("🎮", "Discord Server", "Join our trading community", "https://discord.gg/NRSzCYRzpJ"),
+            ("✈️", "Telegram", "Daily market updates", "https://t.me/dashboardoptions"),
+            ("▶️", "YouTube", "Tutorials & analysis", "https://www.youtube.com/@DashboardOptions"),
         ]:
-            st.markdown(f'<a href="{url}" target="_blank" class="social-link"><div class="social-icon">{icon}</div><div><div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div><div style="color:#555;font-size:0.82rem;">{handle}</div></div><div style="margin-left:auto;color:#333;">?</div></a>', unsafe_allow_html=True)
+            st.markdown(f'<a href="{url}" target="_blank" class="social-link"><div class="social-icon">{icon}</div><div><div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div><div style="color:#888;font-size:0.82rem;">{handle}</div></div><div style="margin-left:auto;color:#00ff88;">→</div></a>', unsafe_allow_html=True)
 
     st.markdown("""
     <div style="background:linear-gradient(135deg,#0d1a12 0%,#111 100%); border:1px solid rgba(0,255,136,0.2); border-radius:16px; padding:40px; text-align:center; margin-top:30px;">
@@ -253,12 +254,24 @@ elif "?? Links" in page:
     """, unsafe_allow_html=True)
 
 st.markdown("""
-<div style="text-align:center; padding:40px 0 20px; color:#333; font-size:0.8rem; margin-top:60px; border-top:1px solid #1a1a1a;">
-    Built with ?? by <a href="https://khalidnaami.com" style="color:#00ff88;text-decoration:none;">Khalid Naami</a>
+<div style="text-align:center; padding:40px 0 20px; color:#555; font-size:0.8rem; margin-top:60px; border-top:1px solid #1a1a1a;">
+    Built with ❤️ by <a href="https://khalidnaami.com/" style="color:#00ff88;text-decoration:none;">Khalid Naami</a>
     &nbsp;·&nbsp;
-    <a href="https://dashboardoptions.com" style="color:#00ff88;text-decoration:none;">dashboardoptions.com</a>
+    <a href="https://dashboardoptions.com/" style="color:#00ff88;text-decoration:none;">dashboardoptions.com</a>
     &nbsp;·&nbsp;
     <a href="https://github.com/khalid-naami/guide-dashboardoptions" style="color:#00ff88;text-decoration:none;">GitHub</a>
+    &nbsp;·&nbsp;
+    <a href="https://x.com/DashboardOption" style="color:#00ff88;text-decoration:none;">𝕏</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/dashboardoptions/" style="color:#00ff88;text-decoration:none;">Instagram</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/company/dashboard-options/" style="color:#00ff88;text-decoration:none;">LinkedIn</a>
+    &nbsp;·&nbsp;
+    <a href="https://t.me/dashboardoptions" style="color:#00ff88;text-decoration:none;">Telegram</a>
+    &nbsp;·&nbsp;
+    <a href="https://discord.gg/NRSzCYRzpJ" style="color:#00ff88;text-decoration:none;">Discord</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.youtube.com/@DashboardOptions" style="color:#00ff88;text-decoration:none;">YouTube</a>
 </div>
 """, unsafe_allow_html=True)
 
