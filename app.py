@@ -224,6 +224,7 @@ elif "?? Links" in page:
 
     links = [
         ("https://www.google.com/s2/favicons?domain=dashboardoptions.com&sz=64", "Dashboard Options", "https://dashboardoptions.com/"),
+        ("https://www.google.com/s2/favicons?domain=khalidnaami.com&sz=64", "Khalid Naami", "https://khalidnaami.com/"),
         ("https://cdn.simpleicons.org/github/ffffff", "GitHub", "https://github.com/khalid-naami/guide-dashboardoptions"),
         ("https://cdn.simpleicons.org/x/ffffff", "Twitter / X", "https://x.com/DashboardOption"),
         ("https://cdn.simpleicons.org/linkedin/ffffff", "LinkedIn", "https://www.linkedin.com/company/dashboard-options/"),
