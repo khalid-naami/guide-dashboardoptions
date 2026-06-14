@@ -224,13 +224,15 @@ elif "?? Links" in page:
 
     img = '<img src="{}" width="26" height="26" style="object-fit:contain;flex-shrink:0;" />'
     links = [
-        ('<div style="width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#00ff88,#00cc6a);display:flex;align-items:center;justify-content:center;font-weight:900;color:#000;font-size:12px;flex-shrink:0;">K</div>',
+        (img.format("https://dashboardoptions.com/favicon.ico"),
+         "Dashboard Options", "https://dashboardoptions.com/"),
+        (img.format("https://khalidnaami.com/favicon.ico"),
          "Khalid Naami", "https://khalidnaami.com/"),
         (img.format("https://cdn.simpleicons.org/github/ffffff"),
          "GitHub", "https://github.com/khalid-naami/guide-dashboardoptions"),
         (img.format("https://cdn.simpleicons.org/x/ffffff"),
          "Twitter / X", "https://x.com/DashboardOption"),
-        ('<div style="width:26px;height:26px;border-radius:5px;background:#0A66C2;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:11px;flex-shrink:0;">in</div>',
+        (img.format("https://cdn.simpleicons.org/linkedin/0A66C2"),
          "LinkedIn", "https://www.linkedin.com/company/dashboard-options/"),
         (img.format("https://cdn.simpleicons.org/instagram/ffffff"),
          "Instagram", "https://www.instagram.com/dashboardoptions/"),
@@ -241,14 +243,14 @@ elif "?? Links" in page:
         (img.format("https://cdn.simpleicons.org/youtube/ffffff"),
          "YouTube", "https://www.youtube.com/@DashboardOptions"),
     ]
-    html_links = "".join([
+    inner = "".join([
         f'<a href="{url}" target="_blank" class="social-link">'
         f'{icon_html}'
         f'<div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div>'
         f'</a>'
         for icon_html, name, url in links
     ])
-    st.markdown(html_links, unsafe_allow_html=True)
+    st.markdown(f'<div>{inner}</div>', unsafe_allow_html=True)
 
     st.markdown("""
     <div style="background:linear-gradient(135deg,#0d1a12 0%,#111 100%); border:1px solid rgba(0,255,136,0.2); border-radius:16px; padding:40px; text-align:center; margin-top:30px;">
