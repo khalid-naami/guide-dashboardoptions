@@ -223,16 +223,17 @@ elif "?? Links" in page:
     st.markdown('<div class="section-title">Links & Community</div><div class="neon-line"></div><p class="section-sub">Connect with Dashboard Options across all platforms</p>', unsafe_allow_html=True)
 
     img = '<img src="{}" width="26" height="26" style="object-fit:contain;flex-shrink:0;" />'
+    badge = '<div style="width:28px;height:28px;border-radius:8px;background:{};display:flex;align-items:center;justify-content:center;font-weight:800;color:{};font-size:{}px;flex-shrink:0;letter-spacing:-1px;">{}</div>'
     links = [
-        (img.format("https://dashboardoptions.com/favicon.ico"),
+        (badge.format("linear-gradient(135deg,#00ff88,#00cc6a)", "#000", 13, "DO"),
          "Dashboard Options", "https://dashboardoptions.com/"),
-        (img.format("https://khalidnaami.com/favicon.ico"),
+        (badge.format("linear-gradient(135deg,#6366f1,#8b5cf6)", "#fff", 13, "KN"),
          "Khalid Naami", "https://khalidnaami.com/"),
         (img.format("https://cdn.simpleicons.org/github/ffffff"),
          "GitHub", "https://github.com/khalid-naami/guide-dashboardoptions"),
         (img.format("https://cdn.simpleicons.org/x/ffffff"),
          "Twitter / X", "https://x.com/DashboardOption"),
-        (img.format("https://cdn.simpleicons.org/linkedin/0A66C2"),
+        (badge.format("#0A66C2", "#fff", 11, "in"),
          "LinkedIn", "https://www.linkedin.com/company/dashboard-options/"),
         (img.format("https://cdn.simpleicons.org/instagram/ffffff"),
          "Instagram", "https://www.instagram.com/dashboardoptions/"),
