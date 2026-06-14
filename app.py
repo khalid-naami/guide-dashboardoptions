@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Dashboard Options — Complete Guide",
+    page_title="Dashboard Options â€” Complete Guide",
     page_icon="??",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -73,7 +73,7 @@ if "?? Home" in page:
     <div class="hero">
         <div class="hero-badge">? Institutional-Grade Options Analytics</div>
         <div class="hero-title">Dashboard Options</div>
-        <p class="hero-sub">Real-time options Greeks, flow analytics, and market intelligence — all in one platform. Built for serious traders.</p>
+        <p class="hero-sub">Real-time options Greeks, flow analytics, and market intelligence â€” all in one platform. Built for serious traders.</p>
         <a href="https://dashboardoptions.com" target="_blank" class="btn-primary">?? Launch Platform</a>
         <a href="https://github.com/khalid-naami/Dashboard-options" target="_blank" class="btn-outline">? Star on GitHub</a>
     </div>
@@ -88,7 +88,7 @@ if "?? Home" in page:
     st.markdown("""
     <div class="section-title">What is Dashboard Options?</div>
     <div class="neon-line"></div>
-    <p class="section-sub">A professional-grade options analytics platform giving individual traders access to institutional-level data — completely free. From Greeks exposure to volatility surfaces, earnings intelligence to macro liquidity.</p>
+    <p class="section-sub">A professional-grade options analytics platform giving individual traders access to institutional-level data â€” completely free. From Greeks exposure to volatility surfaces, earnings intelligence to macro liquidity.</p>
     """, unsafe_allow_html=True)
 
     c1, c2 = st.columns(2)
@@ -105,10 +105,10 @@ elif "?? Features" in page:
         ("??","Options Flow","Track unusual options activity and large block trades as they happen."),
         ("??","GEX Surface","Gamma Exposure surface showing dealer positioning and key gamma levels."),
         ("??","Exposure Heatmap","Visual heatmap of Greeks exposure across all strikes and expirations."),
-        ("?","Delta Exposure","Net delta exposure by strike — where are market makers delta-hedged?"),
+        ("?","Delta Exposure","Net delta exposure by strike â€” where are market makers delta-hedged?"),
         ("??","Gamma Exposure","Gamma levels that act as magnets or repellers for price action."),
         ("??","Vanna Exposure","Vanna-driven flows that intensify during volatility expansion/contraction."),
-        ("?","Charm Exposure","Time-decay driven delta changes — critical near expiration."),
+        ("?","Charm Exposure","Time-decay driven delta changes â€” critical near expiration."),
         ("??","Vomma Exposure","Volatility of volatility sensitivity across the options surface."),
         ("??","Speed Exposure","Third-order Greek tracking for advanced positioning analysis."),
         ("??","Color Exposure","Color (Speed of Gamma) exposure visualization across strikes."),
@@ -139,18 +139,18 @@ elif "?? Features" in page:
 
 # -- GREEKS --
 elif "?? Greeks Guide" in page:
-    st.markdown('<div class="section-title">Options Greeks — Complete Guide</div><div class="neon-line"></div><p class="section-sub">Dashboard Options tracks all Greeks in real-time — here is what they mean.</p>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">Options Greeks â€” Complete Guide</div><div class="neon-line"></div><p class="section-sub">Dashboard Options tracks all Greeks in real-time â€” here is what they mean.</p>', unsafe_allow_html=True)
     greeks = [
         ("?","Delta","Price Sensitivity","Measures how much an option price changes for every $1 move in the underlying. 0 to 1 for calls, -1 to 0 for puts."),
         ("G","Gamma","Delta Acceleration","Rate of change of Delta. High Gamma = Delta changes rapidly. Market makers must hedge Gamma, creating mechanical flows."),
-        ("T","Theta","Time Decay","Daily loss in option value due to time passing. Options lose value every day — Theta is the cost of holding."),
+        ("T","Theta","Time Decay","Daily loss in option value due to time passing. Options lose value every day â€” Theta is the cost of holding."),
         ("V","Vega","Vol Sensitivity","How much the option price changes with a 1% change in IV. Long options benefit from rising IV."),
         ("?","Rho","Rate Sensitivity","Sensitivity to interest rate changes. Less critical for short-term options."),
         ("V'","Vanna","Delta-Vega Cross","How Delta changes with IV. Creates powerful flows during volatility expansions and contractions."),
-        ("?","Charm","Delta Decay","Rate at which Delta changes over time. Critical near expiration — causes mechanical hedging flows."),
+        ("?","Charm","Delta Decay","Rate at which Delta changes over time. Critical near expiration â€” causes mechanical hedging flows."),
         ("?","Vomma","Vega Convexity","Rate of change of Vega with IV. High Vomma benefits long volatility positions."),
-        ("?�","Speed","Gamma Momentum","Third-order derivative — how Gamma changes with price movement."),
-        ("C","Color","Gamma Decay","How Gamma changes over time — predicts dealer Gamma shift approaching expiration."),
+        ("?³","Speed","Gamma Momentum","Third-order derivative â€” how Gamma changes with price movement."),
+        ("C","Color","Gamma Decay","How Gamma changes over time â€” predicts dealer Gamma shift approaching expiration."),
     ]
     cols = st.columns(2)
     for i, (letter, name, subtitle, desc) in enumerate(greeks):
@@ -160,7 +160,7 @@ elif "?? Greeks Guide" in page:
     st.markdown("""
     <div style="background:#0d1a12; border:1px solid rgba(0,255,136,0.2); border-radius:14px; padding:24px; margin-top:10px;">
         <div style="font-weight:700; color:#00ff88; margin-bottom:12px;">?? Why Greeks Matter</div>
-        <p style="color:#888; line-height:1.7; font-size:0.9rem;">Market makers who sell options must continuously delta-hedge. When large options expire or IV spikes, mechanical hedging flows from Gamma, Vanna, and Charm can move markets significantly — independent of any news. Dashboard Options lets you track these flows in real-time.</p>
+        <p style="color:#888; line-height:1.7; font-size:0.9rem;">Market makers who sell options must continuously delta-hedge. When large options expire or IV spikes, mechanical hedging flows from Gamma, Vanna, and Charm can move markets significantly â€” independent of any news. Dashboard Options lets you track these flows in real-time.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -195,7 +195,7 @@ elif "?? Get Started" in page:
         ("2","Navigate","Open terminal and cd into the project directory."),
         ("3","Virtual Environment","Run: python -m venv venv"),
         ("4","Activate","Windows: .\\venv\\Scripts\\activate | Mac/Linux: source venv/bin/activate"),
-        ("5","Launch","Run: python main.py — installs dependencies and launches automatically."),
+        ("5","Launch","Run: python main.py â€” installs dependencies and launches automatically."),
     ]
     for num, title, desc in steps:
         st.markdown(f"""
@@ -247,7 +247,7 @@ elif "?? Links" in page:
     <div style="background:linear-gradient(135deg,#0d1a12 0%,#111 100%); border:1px solid rgba(0,255,136,0.2); border-radius:16px; padding:40px; text-align:center; margin-top:30px;">
         <div style="font-size:2rem; margin-bottom:12px;">??</div>
         <div style="font-size:1.5rem; font-weight:800; color:#fff; margin-bottom:8px;">Ready to Trade Smarter?</div>
-        <div style="color:#666; margin-bottom:24px;">Join traders using institutional-level data — for free.</div>
+        <div style="color:#666; margin-bottom:24px;">Join traders using institutional-level data â€” for free.</div>
         <a href="https://dashboardoptions.com" target="_blank" class="btn-primary">Open Dashboard Options Now ?</a>
     </div>
     """, unsafe_allow_html=True)
@@ -255,9 +255,9 @@ elif "?? Links" in page:
 st.markdown("""
 <div style="text-align:center; padding:40px 0 20px; color:#333; font-size:0.8rem; margin-top:60px; border-top:1px solid #1a1a1a;">
     Built with ?? by <a href="https://khalidnaami.com" style="color:#00ff88;text-decoration:none;">Khalid Naami</a>
-    &nbsp;�&nbsp;
+    &nbsp;·&nbsp;
     <a href="https://dashboardoptions.com" style="color:#00ff88;text-decoration:none;">dashboardoptions.com</a>
-    &nbsp;�&nbsp;
+    &nbsp;·&nbsp;
     <a href="https://github.com/khalid-naami/Dashboard-options" style="color:#00ff88;text-decoration:none;">GitHub</a>
 </div>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True)
