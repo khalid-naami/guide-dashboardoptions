@@ -222,7 +222,7 @@ python main.py
 elif "?? Links" in page:
     st.markdown('<div class="section-title">Links & Community</div><div class="neon-line"></div><p class="section-sub">Connect with Dashboard Options across all platforms</p>', unsafe_allow_html=True)
 
-    for icon, name, handle, url in [
+    links = [
         ("🌐", "Website", "dashboardoptions.com", "https://dashboardoptions.com/"),
         ("👤", "Khalid Naami", "khalidnaami.com", "https://khalidnaami.com/"),
         ("💻", "GitHub", "khalid-naami/guide-dashboardoptions", "https://github.com/khalid-naami/guide-dashboardoptions"),
@@ -232,8 +232,16 @@ elif "?? Links" in page:
         ("🎮", "Discord Server", "Join our trading community", "https://discord.gg/NRSzCYRzpJ"),
         ("✈️", "Telegram", "Daily market updates", "https://t.me/dashboardoptions"),
         ("▶️", "YouTube", "Tutorials & analysis", "https://www.youtube.com/@DashboardOptions"),
-    ]:
-        st.markdown(f'<a href="{url}" target="_blank" class="social-link"><div class="social-icon">{icon}</div><div><div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div><div style="color:#888;font-size:0.82rem;">{handle}</div></div><div style="margin-left:auto;color:#00ff88;">→</div></a>', unsafe_allow_html=True)
+    ]
+    html_links = "".join([
+        f'<a href="{url}" target="_blank" class="social-link">'
+        f'<div class="social-icon">{icon}</div>'
+        f'<div><div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div>'
+        f'<div style="color:#888;font-size:0.82rem;">{handle}</div></div>'
+        f'<div style="margin-left:auto;color:#00ff88;">→</div></a>'
+        for icon, name, handle, url in links
+    ])
+    st.markdown(html_links, unsafe_allow_html=True)
 
     st.markdown("""
     <div style="background:linear-gradient(135deg,#0d1a12 0%,#111 100%); border:1px solid rgba(0,255,136,0.2); border-radius:16px; padding:40px; text-align:center; margin-top:30px;">
