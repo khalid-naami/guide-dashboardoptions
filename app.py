@@ -222,22 +222,31 @@ python main.py
 elif "?? Links" in page:
     st.markdown('<div class="section-title">Links & Community</div><div class="neon-line"></div><p class="section-sub">Connect with Dashboard Options across all platforms</p>', unsafe_allow_html=True)
 
+    img = '<img src="{}" width="26" height="26" style="object-fit:contain;flex-shrink:0;" />'
     links = [
-        ("https://khalidnaami.com/favicon.ico", "Khalid Naami", "https://khalidnaami.com/"),
-        ("https://cdn.simpleicons.org/github/ffffff", "GitHub", "https://github.com/khalid-naami/guide-dashboardoptions"),
-        ("https://cdn.simpleicons.org/x/ffffff", "Twitter / X", "https://x.com/DashboardOption"),
-        ("https://cdn.simpleicons.org/linkedin/ffffff", "LinkedIn", "https://www.linkedin.com/company/dashboard-options/"),
-        ("https://cdn.simpleicons.org/instagram/ffffff", "Instagram", "https://www.instagram.com/dashboardoptions/"),
-        ("https://cdn.simpleicons.org/discord/ffffff", "Discord", "https://discord.gg/NRSzCYRzpJ"),
-        ("https://cdn.simpleicons.org/telegram/ffffff", "Telegram", "https://t.me/dashboardoptions"),
-        ("https://cdn.simpleicons.org/youtube/ffffff", "YouTube", "https://www.youtube.com/@DashboardOptions"),
+        ('<div style="width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#00ff88,#00cc6a);display:flex;align-items:center;justify-content:center;font-weight:900;color:#000;font-size:12px;flex-shrink:0;">K</div>',
+         "Khalid Naami", "https://khalidnaami.com/"),
+        (img.format("https://cdn.simpleicons.org/github/ffffff"),
+         "GitHub", "https://github.com/khalid-naami/guide-dashboardoptions"),
+        (img.format("https://cdn.simpleicons.org/x/ffffff"),
+         "Twitter / X", "https://x.com/DashboardOption"),
+        ('<div style="width:26px;height:26px;border-radius:5px;background:#0A66C2;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:11px;flex-shrink:0;">in</div>',
+         "LinkedIn", "https://www.linkedin.com/company/dashboard-options/"),
+        (img.format("https://cdn.simpleicons.org/instagram/ffffff"),
+         "Instagram", "https://www.instagram.com/dashboardoptions/"),
+        (img.format("https://cdn.simpleicons.org/discord/ffffff"),
+         "Discord", "https://discord.gg/NRSzCYRzpJ"),
+        (img.format("https://cdn.simpleicons.org/telegram/ffffff"),
+         "Telegram", "https://t.me/dashboardoptions"),
+        (img.format("https://cdn.simpleicons.org/youtube/ffffff"),
+         "YouTube", "https://www.youtube.com/@DashboardOptions"),
     ]
     html_links = "".join([
         f'<a href="{url}" target="_blank" class="social-link">'
-        f'<img src="{icon}" width="26" height="26" style="object-fit:contain;flex-shrink:0;" />'
+        f'{icon_html}'
         f'<div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div>'
         f'</a>'
-        for icon, name, url in links
+        for icon_html, name, url in links
     ])
     st.markdown(html_links, unsafe_allow_html=True)
 
