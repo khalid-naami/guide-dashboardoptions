@@ -223,23 +223,21 @@ elif "?? Links" in page:
     st.markdown('<div class="section-title">Links & Community</div><div class="neon-line"></div><p class="section-sub">Connect with Dashboard Options across all platforms</p>', unsafe_allow_html=True)
 
     links = [
-        ("https://www.google.com/s2/favicons?domain=dashboardoptions.com&sz=64", "Website", "dashboardoptions.com", "https://dashboardoptions.com/"),
-        ("https://www.google.com/s2/favicons?domain=khalidnaami.com&sz=64", "Khalid Naami", "khalidnaami.com", "https://khalidnaami.com/"),
-        ("https://cdn.simpleicons.org/github/ffffff", "GitHub", "khalid-naami/guide-dashboardoptions", "https://github.com/khalid-naami/guide-dashboardoptions"),
-        ("https://cdn.simpleicons.org/x/ffffff", "Twitter / X", "@DashboardOption", "https://x.com/DashboardOption"),
-        ("https://cdn.simpleicons.org/linkedin/ffffff", "LinkedIn", "Dashboard Options", "https://www.linkedin.com/company/dashboard-options/"),
-        ("https://cdn.simpleicons.org/instagram/ffffff", "Instagram", "@dashboardoptions", "https://www.instagram.com/dashboardoptions/"),
-        ("https://cdn.simpleicons.org/discord/ffffff", "Discord Server", "Join our trading community", "https://discord.gg/NRSzCYRzpJ"),
-        ("https://cdn.simpleicons.org/telegram/ffffff", "Telegram", "Daily market updates", "https://t.me/dashboardoptions"),
-        ("https://cdn.simpleicons.org/youtube/ffffff", "YouTube", "Tutorials & analysis", "https://www.youtube.com/@DashboardOptions"),
+        ("https://www.google.com/s2/favicons?domain=dashboardoptions.com&sz=64", "Dashboard Options", "https://dashboardoptions.com/"),
+        ("https://cdn.simpleicons.org/github/ffffff", "GitHub", "https://github.com/khalid-naami/guide-dashboardoptions"),
+        ("https://cdn.simpleicons.org/x/ffffff", "Twitter / X", "https://x.com/DashboardOption"),
+        ("https://cdn.simpleicons.org/linkedin/ffffff", "LinkedIn", "https://www.linkedin.com/company/dashboard-options/"),
+        ("https://cdn.simpleicons.org/instagram/ffffff", "Instagram", "https://www.instagram.com/dashboardoptions/"),
+        ("https://cdn.simpleicons.org/discord/ffffff", "Discord", "https://discord.gg/NRSzCYRzpJ"),
+        ("https://cdn.simpleicons.org/telegram/ffffff", "Telegram", "https://t.me/dashboardoptions"),
+        ("https://cdn.simpleicons.org/youtube/ffffff", "YouTube", "https://www.youtube.com/@DashboardOptions"),
     ]
     html_links = "".join([
         f'<a href="{url}" target="_blank" class="social-link">'
-        f'<img src="{icon}" width="28" height="28" style="object-fit:contain;flex-shrink:0;" />'
-        f'<div><div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div>'
-        f'<div style="color:#888;font-size:0.82rem;">{handle}</div></div>'
-        f'<div style="margin-left:auto;color:#00ff88;">→</div></a>'
-        for icon, name, handle, url in links
+        f'<img src="{icon}" width="26" height="26" style="object-fit:contain;flex-shrink:0;" />'
+        f'<div style="font-weight:700;color:#fff;font-size:0.95rem;">{name}</div>'
+        f'</a>'
+        for icon, name, url in links
     ])
     st.markdown(html_links, unsafe_allow_html=True)
 
