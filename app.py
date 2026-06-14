@@ -223,8 +223,8 @@ elif "?? Links" in page:
     st.markdown('<div class="section-title">Links & Community</div><div class="neon-line"></div><p class="section-sub">Connect with Dashboard Options across all platforms</p>', unsafe_allow_html=True)
 
     links = [
-        ("https://www.google.com/s2/favicons?domain=dashboardoptions.com&amp;sz=64", "Dashboard Options", "https://dashboardoptions.com/"),
-        ("https://www.google.com/s2/favicons?domain=khalidnaami.com&amp;sz=64", "Khalid Naami", "https://khalidnaami.com/"),
+        ("https://dashboardoptions.com/favicon.ico", "Dashboard Options", "https://dashboardoptions.com/"),
+        ("https://khalidnaami.com/favicon.ico", "Khalid Naami", "https://khalidnaami.com/"),
         ("https://cdn.simpleicons.org/github/ffffff", "GitHub", "https://github.com/khalid-naami/guide-dashboardoptions"),
         ("https://cdn.simpleicons.org/x/ffffff", "Twitter / X", "https://x.com/DashboardOption"),
         ("https://cdn.simpleicons.org/linkedin/ffffff", "LinkedIn", "https://www.linkedin.com/company/dashboard-options/"),
